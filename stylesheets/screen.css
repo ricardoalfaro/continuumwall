@@ -1,7 +1,4 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* Welcome to Compass.*/
 /* line 17, ../../../../.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,4 +62,186 @@ a img {
 /* line 114, ../../../../.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
+}
+
+/* LAYOUT --------------------------------------------------------------------------------*/
+/* CONTENIDO -------------------------------------*/
+@font-face {
+  font-family: "Chalkduster";
+  src: url('/stylesheets/fonts/../fonts/Chalkduster.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url('/stylesheets/fonts/../fonts/Helvetica.otf') format('opentype');
+}
+
+/* line 4, ../sass/base.scss */
+body {
+  background: url(../images/white_brick_wall.png) repeat 0 0 transparent;
+  font-family: "Helvetica", Arial, sans-serif;
+}
+
+/* line 10, ../sass/base.scss */
+header {
+  border-top: 4px solid #494951;
+  -moz-box-shadow: inset 0 3px 0 #cccccc;
+  -webkit-box-shadow: inset 0 3px 0 #cccccc;
+  -o-box-shadow: inset 0 3px 0 #cccccc;
+  box-shadow: inset 0 3px 0 #cccccc;
+}
+/* line 11, ../sass/base.scss */
+header section {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  height: 130px;
+}
+/* line 15, ../sass/base.scss */
+header section a {
+  left: 50%;
+  display: block;
+  position: absolute;
+  top: 75px;
+  margin-left: -50px;
+}
+
+/* line 27, ../sass/base.scss */
+#content {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #181819), color-stop(100%, #494951)), repeat scroll 0 0 transparent;
+  background: -webkit-linear-gradient(center top, #181819, #494951), repeat scroll 0 0 transparent;
+  background: -moz-linear-gradient(center top, #181819, #494951), repeat scroll 0 0 transparent;
+  background: -o-linear-gradient(center top, #181819, #494951), repeat scroll 0 0 transparent;
+  background: -ms-linear-gradient(center top, #181819, #494951), repeat scroll 0 0 transparent;
+  background: linear-gradient(center top, #181819, #494951), repeat scroll 0 0 transparent;
+}
+/* line 29, ../sass/base.scss */
+#content .group-content {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 32, ../sass/base.scss */
+#content .group-content .frase {
+  padding: 25% 10px;
+}
+/* line 34, ../sass/base.scss */
+#content .group-content .frase h1 {
+  font-size: 42px;
+  font-family: "Chalkduster", Verdana, sans-serif;
+  text-align: center;
+  display: block;
+  color: #FFF;
+  text-shadow: 1px 1px 3px black;
+  text-transform: uppercase;
+  line-height: 48px;
+}
+/* line 39, ../sass/base.scss */
+#content .group-content .frase h1:before {
+  content: open-quote;
+}
+/* line 42, ../sass/base.scss */
+#content .group-content .frase h1:after {
+  content: close-quote;
+}
+/* line 46, ../sass/base.scss */
+#content .group-content .frase h2 {
+  font-size: 32px;
+  font-family: "Chalkduster", Verdana, sans-serif;
+  text-align: center;
+  display: block;
+  color: #FFF;
+  text-shadow: 1px 1px 3px black;
+  margin-top: 14px;
+}
+/* line 52, ../sass/base.scss */
+#content .group-content .actions {
+  position: absolute;
+  bottom: 0;
+  width: 286px;
+  left: 50%;
+  margin-left: -143px;
+  margin-bottom: 30px;
+}
+/* line 59, ../sass/base.scss */
+#content .group-content .actions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 63, ../sass/base.scss */
+#content .group-content .actions ul li {
+  display: inline-block;
+}
+/* line 65, ../sass/base.scss */
+#content .group-content .actions ul li a {
+  display: block;
+  text-indent: -100000px;
+  height: 60px;
+  width: 60px;
+  margin: 0 2px;
+  background: url(../images/sprite_controls.png) no-repeat;
+  border: 1px solid transparent;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 74, ../sass/base.scss */
+#content .group-content .actions ul li a:hover {
+  border-color: #000;
+  -moz-box-shadow: inset 0 1px 1px #6b717b;
+  -webkit-box-shadow: inset 0 1px 1px #6b717b;
+  -o-box-shadow: inset 0 1px 1px #6b717b;
+  box-shadow: inset 0 1px 1px #6b717b;
+}
+/* line 78, ../sass/base.scss */
+#content .group-content .actions ul li a:active {
+  border-color: #3d424a;
+  -moz-box-shadow: inset 0 1px 1px #17181e;
+  -webkit-box-shadow: inset 0 1px 1px #17181e;
+  -o-box-shadow: inset 0 1px 1px #17181e;
+  box-shadow: inset 0 1px 1px #17181e;
+}
+/* line 82, ../sass/base.scss */
+#content .group-content .actions ul li a.buscar {
+  background-position: 0 0;
+}
+/* line 85, ../sass/base.scss */
+#content .group-content .actions ul li a.comentar {
+  background-position: 0 -60px;
+}
+/* line 88, ../sass/base.scss */
+#content .group-content .actions ul li a.agregar {
+  background-position: 0 -120px;
+}
+/* line 91, ../sass/base.scss */
+#content .group-content .actions ul li a.otrafrase {
+  background-position: 0 -180px;
+}
+
+/* line 101, ../sass/base.scss */
+footer {
+  width: 960px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+/* line 104, ../sass/base.scss */
+footer .logo_footer {
+  display: block;
+  text-indent: -100000px;
+  background: url(../images/logo_footer.png) no-repeat 0 0;
+  width: 122px;
+  height: 18px;
+  margin: 0 auto;
+}
+/* line 112, ../sass/base.scss */
+footer p {
+  font-size: 12px;
+  text-shadow: 1px 1px 0 white;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
 }
