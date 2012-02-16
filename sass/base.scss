@@ -1,14 +1,13 @@
-@include font-face("Chalkduster", font-files("../fonts/Chalkduster.ttf", truetype));
-@include font-face("Helvetica", font-files("../fonts/Helvetica.otf", opentype));
 
 body{
 	background: url(../images/white_brick_wall.png) repeat 0 0 transparent;
-	font-family: "Helvetica", Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
+/*---------------------------------------------- General Layout ------------------------------------------*/
 
 header{
-	section{
+	figure{
 		@include centerpage;
 		position:relative;
 		height:130px;
@@ -18,6 +17,11 @@ header{
 			position:absolute;
 			top:75px;
 			margin-left:-50px;
+			z-index:10;
+		}
+		figcaption{
+			position:absolute;
+			visibility:hidden;
 		}
 	}
 	border-top:4px solid #494951;
@@ -26,75 +30,56 @@ header{
 
 #content{
 	@include background(linear-gradient(center top , #181819, #494951), repeat scroll 0 0 transparent);
+	/*background: url(../images/dark_brick_wall.png) repeat 0 0 transparent;*/
+	@include box-shadow(inset 0 0 20px black);
+	@include opacity(0.95);
 	.group-content{
 		@include centerpage;
-		position:relative;
-		.frase{
-			padding:25% 10px;
-			h1{
-				font-size:42px;
-				@include textoprincipal;
-				text-transform:uppercase;
-				line-height:48px;
-				&:before{
-					content:open-quote;
+		#board{
+			position:relative;
+			.frase{
+				padding:28% 10px 20% 10px;
+				h1{
+					font-size:42px;
+					@include textoprincipal;
+					text-transform:uppercase;
+					line-height:48px;
+					&:before{
+						content:open-quote;
+					}
+					&:after{
+						content:close-quote;
+					}
 				}
-				&:after{
-					content:close-quote;
+				h2{
+					font-size:32px;
+					@include textoprincipal;
+					margin-top:14px;
 				}
 			}
-			h2{
-				font-size:32px;
-				@include textoprincipal;
-				margin-top:14px;
-			}
-		}
-		.actions{
-			position:absolute;
-			bottom:0;
-			width:286px;
-			left:50%;
-			margin-left:-143px;
-			margin-bottom:30px;
-			ul{
-				list-style:none;
-				padding:0;
-				margin:0;
-				li{
-					display:inline-block;
-					a{
-						display:block;
-						text-indent:-100000px;
-						height:60px;
-						width:60px;
-						margin:0 2px;
-						background:url(../images/sprite_controls.png) no-repeat;
-						border:1px solid transparent;
-						@include border-radius(4px);
-						&:hover{
-							border-color:#000;
-							@include box-shadow(inset 0 1px 1px #6b717b);
-						}
-						&:active{
-							border-color:#3d424a;
-							@include box-shadow(inset 0 1px 1px #17181e);
-						}
-						&.buscar{
-							background-position:0 0;
-						}
-						&.comentar{
-							background-position:0 -60px;
-						}
-						&.agregar{
-							background-position:0 -120px;
-						}
-						&.otrafrase{
-							background-position:0 -180px;
-						}
+			.actions{
+				text-align: center;
+				padding: 12px 0;
+				ul{
+					list-style:none;
+					padding:0;
+					margin:0;
+					li{
+						display:inline-block;
 					}
 				}
 			}
 		}
+		#hidden-sections{
+			@include borde-oscuro-top;
+			#search-box,
+			#comments-box,
+			#adding-box{
+				padding:18px 8px;
+				@include borde-oscuro-bottom;
+				display:none;
+			}
+		}		
 	}
 }
 
@@ -115,5 +100,153 @@ footer{
 		display:block;
 		text-align:center;
 		padding-top:10px;
+	}
+}
+
+
+/*---------------------------------------------- Elements ------------------------------------------*/
+
+.actions{
+	a{
+		display:block;
+		text-indent:-100000px;
+		height:60px;
+		width:60px;
+		margin:0 2px;
+		background:url(../images/sprite_controls.png) no-repeat;
+		border:1px solid transparent;
+		@include border-radius(4px);
+		&:hover{
+			border-color:#000;
+			@include box-shadow(inset 0 1px 1px #6b717b);
+		}
+		&:active{
+			border-color:#3d424a;
+			@include box-shadow(inset 0 1px 1px #17181e);
+		}
+		&.buscar{
+			background-position:0 0;
+		}
+		&.comentar{
+			background-position:0 -60px;
+		}
+		&.agregar{
+			background-position:0 -120px;
+		}
+		&.otrafrase{
+			background-position:0 -180px;
+		}
+	}
+}
+
+#search-box{
+	position:relative;
+	input[type="text"]{
+		border:none;
+		@include textoprincipal;
+		font-size:24px;
+		background:#282830;
+		color:#FFF;
+		width:600px;
+		padding:16px 0;
+		width:100%;
+		@include border-radius(12px);
+		@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.2));
+	}
+	input[type="submit"]{
+		@include background(linear-gradient(center top , #494951, #363642), repeat scroll 0 0 transparent);
+		border:1px solid #000;
+		@include box-shadow(inset 0 1px 1px #6b717b);
+		@include border-radius(6px);
+		@include text-shadow(0 1px 0 #6b717b);
+		padding:10px;
+		color:#202028;
+		font-size:18px;
+		font-weight:bold;
+		cursor:pointer;
+		position:absolute;
+		right:18px;
+		margin-top:-53px;
+		letter-spacing:-0.03em;
+		&:hover{
+			@include background(linear-gradient(center top , #5f5f68, #494951), repeat scroll 0 0 transparent);
+		}
+	}
+}
+
+#adding-box{
+	position:relative;
+	overflow:hidden;
+	.open-select{
+
+	}
+	input[type="text"]{
+		border:none;
+		@include textoprincipal;
+		font-size:24px;
+		background:#282830;
+		color:#FFF;
+		padding:16px 130px 16px 16px;
+		width:410px;
+		@include border-radius(12px);
+		@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.2));
+		float: right;
+		text-align:left;
+	}
+	select{
+		border:none;
+		@include textoprincipal;
+		font-size:24px;
+		background:none;
+		color:#FFF;
+		padding:15px 12px 8px;
+		width:370px;
+		float: left;
+		text-align:left;
+		-webkit-appearance:none;
+		background:#282830;
+		@include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.2));
+		@include border-radius(12px);
+		height:63px;
+		option{
+			font-size:12px;
+			font-family:Arial;
+			color:#000;
+			@include text-shadow(none);
+			background:#fff;
+			&:focus{
+				outline:0px;
+			}
+		}
+	}
+	input[type="submit"]{
+		@include background(linear-gradient(center top , #494951, #363642), repeat scroll 0 0 transparent);
+		border:1px solid #000;
+		@include box-shadow(inset 0 1px 1px #6b717b);
+		@include border-radius(6px);
+		@include text-shadow(0 1px 0 #6b717b);
+		padding:10px;
+		color:#202028;
+		font-size:18px;
+		font-weight:bold;
+		cursor:pointer;
+		position:absolute;
+		right:18px;
+		margin-top:12px;
+		letter-spacing:-0.03em;
+		&:hover{
+			@include background(linear-gradient(center top , #5f5f68, #494951), repeat scroll 0 0 transparent);
+		}
+	}
+}
+
+#comments-box{
+
+	h3{
+		display:block;
+		text-align:center;
+		color:#171a1e;
+		padding:30px 16px;
+		@include text-shadow(0 1px 0 #6b717b);
 	}
 }

@@ -1,50 +1,125 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset=UTF-8>
 	<title>El muro de Continuum</title>
-  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <link href=stylesheets/screen.css media=screen, projection rel=stylesheet>
+  <link href=stylesheets/print.css media=print rel=stylesheet>
+  <link href=stylesheets/tipTip.css rel=stylesheet>
   <!--[if IE]>
-      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet">
   <![endif]-->
+  <script src=javascripts/jquery-1.7.1.js></script>
+  <script src=javascripts/jquery.tipTip.js></script>
+  <script src=javascripts/frases_array.js></script>
 </head>
 <body>
 	<div class="wrapper">
 		<header>
-			<section>
+			<figure>
 				<a href="http://continuum.cl">
 					<img src="images/isotipo_continuum.png" border="0">
 				</a>
-			</section>
+				<figcaption>
+					Continuum
+				</figcaption>
+			</figure>
 		</header>
-		<div id="content">
-			<section class="group-content">
-				<section class="frase">
-					<h1>Estoy m&aacute;s tieso que la chucha</h1>
-					<h2>Mauro</h2>
-				</section>
-				<section class="actions">
+		<section id="content">
+			<div class="group-content">
+				<section id="board">
+					<article class="frase">
+					<h1 id="frase_completa"></h1>
+					<h2 id="frase_autor"></h2>
+				</article>
+				<article class="actions">
 					<ul>
 						<li>
-							<a href="#" class="buscar">Buscar Frases</a>
+							<a href="#" class="buscar someClass" title="Buscar Frases">Buscar Frases</a>
 						</li>	
 						<li>
-							<a href="#" class="agregar">Agregar Frases</a>
+							<a href="#" class="agregar someClass" title="Agregar Nueva Frase">Agregar Frases</a>
 						</li>	
 						<li>
-							<a href="#" class="comentar">Commentarios</a>
+							<a href="#" class="comentar someClass" title="Coemtarios">Commentarios</a>
 						</li>	
 						<li>
-							<a href="#" class="otrafrase">Otra Frase</a>
+							<a href="#" class="otrafrase someClass" title="Cambiar Frase">Otra Frase</a>
 						</li>	
 					</ul>
+				</article>
 				</section>
-			</section>
-		</div>
+				<section id="hidden-sections">
+					<article id="search-box">
+						<input type="text" placeholder="Nombre del compañero">
+						<input type="submit" value="Buscar">
+					</article>
+					<article id="adding-box">
+						<a href="#" class="open-select"></a>
+						<select>
+							<option>Rodrigo Ayala</option>
+							<option>Ricardo Alfaro</option>
+							<option>Carlos Alarcón</option>
+							<option>Abraham Barrera</option>
+							<option>Cristian Ferrari</option>
+							<option>Liliana Reyes</option>
+							<option>Ricardo Jara</option>
+							<option>Israel Cruz</option>
+							<option>Jorge Rodriguez</option>
+							<option>Miguel Michelson</option>
+							<option>Invitado</option>
+						</select>
+						<input type="text" placeholder="Escribe la frase">
+						<input type="submit" value="Agregar">
+					</article>
+					<article id="comments-box">
+						<h3>No hay comentarios</h3>
+					</article>
+				</section>
+			</div>
+		</section>
 		<footer>
 			<div class="logo_footer">Continuum</div>
-			<p>&copy; 2012  Este es un proyecto de divertimento desarrollado por el equipo de Continuum </p>
+			<p>&copy; 2012 Este es un proyecto de divertimento desarrollado por el equipo de Continuum </p>
 		</footer>
 	</div>
 </body>
+
+  <script src=javascripts/random-frases.js></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	  $(function(){
+			$(".someClass").tipTip();
+	});
+});
+
+function hide_elements(){
+	$('#search-box').hide();
+  $('#adding-box').hide();
+  $('#comments-box').hide();
+}
+
+$('.buscar').click(function() {
+	hide_elements();
+  $('#search-box').slideToggle('fast');
+});
+
+$('.agregar').click(function() {
+	hide_elements();
+  $('#adding-box').slideToggle('fast');
+});
+
+$('.comentar').click(function() {
+	hide_elements();
+  $('#comments-box').slideToggle('fast');
+});
+
+$('.otrafrase').click(function() {
+	hide_elements();
+
+});
+
+
+</script>
+
 </html>

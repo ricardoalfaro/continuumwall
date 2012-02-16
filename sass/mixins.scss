@@ -1,3 +1,17 @@
+/* FONTFACE --------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: Chalkduster;
+    src: url(../fonts/Chalkduster.ttf);
+}
+@font-face {
+    font-family: Helvetica;
+    src: url(../fonts/Helvetica.otf);
+}
+
+/*@include font-face("Chalkduster", font-files("../fonts/Chalkduster.ttf", truetype));*/
+/*@include font-face("Helvetica", font-files("../fonts/Helvetica.otf", opentype));*/
+
 
 /* LAYOUT --------------------------------------------------------------------------------*/
 
@@ -9,46 +23,23 @@
 /* CONTENIDO -------------------------------------*/
 
 @mixin textoprincipal{
-  font-family:"Chalkduster", Verdana, sans-serif;
+  font-family:Chalkduster, Verdana, sans-serif;
   text-align:center;
   display:block;
   color:#FFF;
   @include text-shadow(1px 1px 3px black);
 }
 
-@mixin labeltext{
-  font-size:14px;
-  color:#5C686E;
-  text-align:left;
-  @include text-shadow(1px 1px 0 #fff);
-  padding-top:10px;
-  display:inline-block;
+
+/* DECORACION -------------------------------------*/
+
+@mixin borde-oscuro-bottom{
+  border-bottom:1px solid #62626f;
+  @include box-shadow(inset 0 -1px 0 #000);
 }
 
-@mixin buttonstandar{
-  font-size: 12px;
-	padding: 8px 12px;
-	@include border-radius(4px);
-	@include gradiente_gris_light;
-	font-weight:bold;
-	cursor:pointer;
-	&:hover, &:focus {
-		text-decoration:none;
-		@include gradiente_gris_light_hover;
-	}  
+@mixin borde-oscuro-top{
+  border-top:1px solid #000;
+  @include box-shadow(inset 0 1px 0 #62626f);
 }
 
-@mixin gradiente_anaranjada{
-  @include text-shadow(0 1px 0 #ffbd69);
-	@include background(linear-gradient(center top , #ff9001, #F07105), repeat scroll 0 0 transparent);
-	@include box-shadow(inset 0 1px 1px #ffbd69); 
-  color:#902b00;
-	border:1px solid #BA3801;
-}
-
-@mixin gradiente_anaranjada_hover{
-  @include background(linear-gradient(center top , #ffa801, #ff9001), repeat scroll 0 0 transparent);
-  @include box-shadow(inset 0 1px 1px #ffdb95);
-	color:#9e390f;
-	border-color:#be5602;
-}
