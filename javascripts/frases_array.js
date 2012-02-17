@@ -7,11 +7,11 @@ cl.continuum.wall = {
 
     frasesWall : [
         {
-            texto : "Estoy más duro que la chucha",
+            texto : "Estoy m&aacute;s duro que la chucha",
             autor : "Mauro"
         },
         {
-            texto : "Se la dejé puesta",
+            texto : "Se la dej&eacute; puesta",
             autor : "Abraham a Jano"
         },
 
@@ -26,12 +26,12 @@ cl.continuum.wall = {
         },
 
         {
-            texto : "Si quieres una wea sensible, entonces consíguete una mina",
+            texto : "Si quieres una wea sensible, entonces cons&iacute;guete una mina",
             autor : "Victor (El dostor)"
         },
 
         {
-            texto : "Mañana te lo traigo calientito",
+            texto : "Ma&ntilde;ana te lo traigo calientito",
             autor : "Ricardo Jara"
         },
 

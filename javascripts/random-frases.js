@@ -8,11 +8,11 @@ function showFrases(id, animate) {
   var p_frase = $('h1#frase_completa')
   var p_autor = $('h2#frase_autor')
 		if (animate) {
-            p_frase.fadeOut(2000, function () {
-                $(this).empty().append(frase.texto).fadeIn(2000);
+            p_frase.fadeOut(500, function () {
+                $(this).empty().append(frase.texto).fadeIn(500);
             })
-            p_autor.fadeOut(2000, function () {
-                $(this).empty().append(frase.autor).fadeIn(2000);
+            p_autor.fadeOut(500, function () {
+                $(this).empty().append(frase.autor).fadeIn(500);
             })
         } else {
             p_frase.empty().append(frase.texto);
@@ -39,20 +39,17 @@ function _random(tope, last_one) {
 
   $(document).ready(function () {
         // cargar una frase aleatoria
-        showFrases(_random(cl.continuum.wall.frasesWall.length))
-
-        // mostrar mas frases
+        	showFrases(_random(cl.continuum.wall.frasesWall.length))
+					randomFrases();
+        
+				// mostrar mas frases
         $('.otrafrase').click(function (e) {
           var rd = _random(cl.continuum.wall.frasesWall.length, last_phrase);
-          showFrases(rd);
+          showFrases(rd, 500);
           last_phrase = rd;
           e.preventDefault();
+					clearInterval();
         });
-
-        /*$('.otrafrase').click(function() {
-          showFrases(_random(cl.continuum.wall.frasesWall.length))
-        });*/
-
     });
 
 })(jQuery)
