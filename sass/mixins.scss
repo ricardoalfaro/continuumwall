@@ -16,6 +16,11 @@
 /* LAYOUT --------------------------------------------------------------------------------*/
 
 @mixin centerpage{
+  min-width: 960px;
+  margin:0 auto;
+}
+
+@mixin centerpage-especial{
   width: 960px;
   margin:0 auto;
 }
@@ -23,11 +28,11 @@
 /* CONTENIDO -------------------------------------*/
 
 @mixin textoprincipal{
-  font-family:Chalkduster, Verdana, sans-serif;
+  font-family:Gochi Hand, Verdana, sans-serif;
   text-align:center;
   display:block;
-  color:#FFF;
-  @include text-shadow(1px 1px 3px black);
+  color:#333;
+  @include text-shadow(0 1px 2px rgba(255,255,255,0.6));
 }
 
 
@@ -41,5 +46,39 @@
 @mixin borde-oscuro-top{
   border-top:1px solid #000;
   @include box-shadow(inset 0 1px 0 #62626f);
+}
+
+
+/* FORMS -------------------------------------*/
+
+@mixin input-controls{
+  border:none;
+  @include textoprincipal;
+  @include text-shadow(0 1px 0 #b9b2a8);
+  font-size:24px;
+  background:#e6e6e6;
+  @include background(linear-gradient(center top , #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent);
+  padding:16px 0;
+  width:100%;
+  @include border-radius(12px);
+  @include box-shadow(inset 0 1px 1px #89857f);
+}
+
+@mixin buttons{
+  font-family:Helvetica, Arial, sans-serif;
+  @include background(linear-gradient(center top , #c3c3c3, #a7a7a7), repeat scroll 0 0 transparent);
+  border:1px solid #999999;
+  @include box-shadow(inset 0 1px 0 #f2f2f2);
+  @include border-radius(6px);
+  @include text-shadow(0 1px 0 #f2f2f2);
+  padding:16px 10px 10px;
+  color:#333;
+  font-size:16px;
+  line-height:14px;
+  letter-spacing:-0.03em;
+  cursor:pointer;
+  &:hover{
+    @include background(linear-gradient(center top , #5f5f68, #494951), repeat scroll 0 0 transparent);
+  }
 }
 
