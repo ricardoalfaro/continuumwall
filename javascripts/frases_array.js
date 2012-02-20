@@ -26,7 +26,7 @@ cl.continuum.wall = {
         {texto:"El Alter me caga, pero rico!", autor:"Mauro"},
         {texto:"Yo la probar&iacute;a...", autor:"Leo (a la herramienta de Abraham)"},
         {texto:"&iquest;Te lo presto?", autor:"Abraham a Rodrigo"},
-        {texto:"¡En la ma&ntilde;ana entra todo!",autor:"Mauro a todos"},
+        {texto:"&iexcl;En la ma&ntilde;ana entra todo!",autor:"Mauro a todos"},
         {texto:"A lo mejor, te pod&iacute;s comer uno entero", autor:"Victor (el dostor)"},
         {texto:"Mmm, igual es grande!", autor:"Camilo a Jose Alfredo"},
         {texto:"&iexcl;Te pis&eacute; pero brigido!", autor:"Mauro a Abraham"},
