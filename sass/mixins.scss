@@ -78,7 +78,7 @@
   letter-spacing:-0.03em;
   cursor:pointer;
   &:hover{
-    @include background(linear-gradient(center top , #5f5f68, #494951), repeat scroll 0 0 transparent);
+    @include background(linear-gradient(center top , #ccc, #c3c3c3), repeat scroll 0 0 transparent);
   }
 }
 

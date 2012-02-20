@@ -16,11 +16,11 @@
   <script src=javascripts/frases_array.js></script>
 
 </head>
-<body>
+<body class="ladrillo">
 	<div class="wrapper">
 		<header>
 			<figure>
-				<a href="http://continuum.cl">
+				<a href="http://continuum.cl" id="logo">
 					<img src="images/isotipo_continuum.png" border="0">
 				</a>
 				<figcaption>
@@ -101,9 +101,9 @@ $(document).ready(function() {
 });
 
 function hide_elements(){
-	$('#search-box').fadeOut('fast');
-  $('#adding-box').fadeOut('fast');
-  $('#comments-box').fadeOut('fast');
+	$('#search-box').fadeOut('200');
+  $('#adding-box').fadeOut('200');
+  $('#comments-box').fadeOut('200');
 }
 
 $('.buscar').click(function() {

@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'centerpage'.
-        on line 16 of /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss, in `centerpage'
-        from line 16 of /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss
+        on line 23 of /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss, in `centerpage'
+        from line 23 of /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss
 
 Backtrace:
-/Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss:16:in `centerpage'
-/Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss:16
+/Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss:23:in `centerpage'
+/Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss:23
 /Users/dev/.rvm/gems/ruby-1.8.7-p334@design/gems/sass-3.1.15/lib/sass/../sass/tree/visitors/perform.rb:170:in `visit_mixin'
 /Users/dev/.rvm/gems/ruby-1.8.7-p334@design/gems/sass-3.1.15/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
 /Users/dev/.rvm/gems/ruby-1.8.7-p334@design/gems/sass-3.1.15/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
@@ -92,4 +92,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'centerpage'.\A         on line 16 of /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss, in `centerpage'\A         from line 16 of /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss"; }
+  content: "Syntax error: Undefined mixin 'centerpage'.\A         on line 23 of /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss, in `centerpage'\A         from line 23 of /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss"; }
