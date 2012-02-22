@@ -19,24 +19,37 @@ body{
 
 header{
 	background: url(../images/cement.png) repeat center bottom;
-	figure{
-		position:relative;
-		height:92px;
-		
-		a{
-			left:50%;
-			display:block;
-			position:absolute;
-			top:20px;
-			margin-left:-50px;
-			z-index:10;
-		}
-		figcaption{
-			position:absolute;
-			visibility:hidden;
-		}
+	height:155px;
+	h1{
+		@include pagetitle;
+		top:40px;
+  		font-size:190%;	
+	}
+	h2{
+		@include pagetitle;
+		position:absolute;
+		top:70px;
+  		font-size:290%;
 	}
 }
+
+figure{
+	position:relative;
+	height:150px;
+	a{
+		left:50%;
+		display:block;
+		position:absolute;
+		top:20px;
+		margin-left:-50px;
+		z-index:10;
+	}
+	figcaption{
+		position:absolute;
+		visibility:hidden;
+	}
+}
+
 .wrapper{
 	min-height: 100%;
 	height: auto !important;
@@ -46,7 +59,6 @@ header{
 
 #content{
 	@include box-shadow(inset 0 3px 4px rgba(0,0,0,0.2));
-	@include opacity(0.95);
 	.group-content{
 		@include centerpage;
 		#board{
@@ -59,11 +71,11 @@ header{
 				padding-top: 10px;
 				margin-top: -55px;
 				h1{
-					font-size:350%;
 					@include textoprincipal;
-					text-transform:uppercase;
-					line-height:48px;
 					@include rotate(-2deg);
+					font-size:280%;
+					line-height:1.1em;
+					color:#222;
 					&:before{
 						content:open-quote;
 					}
@@ -72,11 +84,12 @@ header{
 					}
 				}
 				h2{
-					font-size:1.8em;
+					font-size:1.3em;
 					@include textoprincipal;
 					margin-top:2px;
 					text-indent:190px;
 					@include rotate(0.5deg);
+					color:#222;
 				}
 			}
 			.actions{
@@ -161,12 +174,15 @@ footer{
 		}
 		&.buscar{
 			background-position:0 0;
+			display:none;
 		}
 		&.comentar{
 			background-position:0 -60px;
+			display:none;
 		}
 		&.agregar{
 			background-position:0 -120px;
+			display:none;
 		}
 		&.otrafrase{
 			background-position:0 -180px;
@@ -177,7 +193,7 @@ footer{
 #search-box{
 	position:relative;
 	input[placeholder], [placeholder], *[placeholder], input::-webkit-input-placeholder{
-     color:#514b43 !important;
+     color:#777 !important;
      @include text-shadow(none);
     }
 	input[type="text"],
@@ -197,7 +213,7 @@ footer{
 	position:relative;
 	overflow:hidden;
 	input[placeholder], [placeholder], *[placeholder], input::-webkit-input-placeholder{
-     color:#514b43 !important;
+     color:#777 !important;
      @include text-shadow(none);
    }
 	.open-select{
@@ -205,7 +221,7 @@ footer{
 	}
 	input[type="text"]{
 		@include input-controls;
-		padding:16px 130px 16px 16px;
+		padding:9px 130px 9px 16px;
 		width:410px;
 		float: left;
 		text-align:left;

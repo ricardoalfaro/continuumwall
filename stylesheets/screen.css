@@ -66,11 +66,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* FONTFACE --------------------------------------------------------------------------------*/
 @font-face {
-  font-family: Chalkduster;
-  src: url(../fonts/Chalkduster.ttf);
-}
-
-@font-face {
   font-family: Helvetica;
   src: url(../fonts/Helvetica.otf);
 }
@@ -103,14 +98,45 @@ body.ceramica {
 /* line 20, ../sass/base.scss */
 header {
   background: url(../images/cement.png) repeat center bottom;
+  height: 155px;
 }
-/* line 22, ../sass/base.scss */
-header figure {
+/* line 23, ../sass/base.scss */
+header h1 {
+  font-family: Chelsea Market, Verdana, sans-serif;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  color: #888;
+  text-shadow: 0 -2px 0px rgba(0, 0, 0, 0.5);
+  letter-spacing: -0.07em;
+  position: absolute;
+  width: 99.99%;
+  top: 40px;
+  font-size: 190%;
+}
+/* line 28, ../sass/base.scss */
+header h2 {
+  font-family: Chelsea Market, Verdana, sans-serif;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  color: #888;
+  text-shadow: 0 -2px 0px rgba(0, 0, 0, 0.5);
+  letter-spacing: -0.07em;
+  position: absolute;
+  width: 99.99%;
+  position: absolute;
+  top: 70px;
+  font-size: 290%;
+}
+
+/* line 36, ../sass/base.scss */
+figure {
   position: relative;
-  height: 92px;
+  height: 150px;
 }
-/* line 26, ../sass/base.scss */
-header figure a {
+/* line 39, ../sass/base.scss */
+figure a {
   left: 50%;
   display: block;
   position: absolute;
@@ -118,13 +144,13 @@ header figure a {
   margin-left: -50px;
   z-index: 10;
 }
-/* line 34, ../sass/base.scss */
-header figure figcaption {
+/* line 47, ../sass/base.scss */
+figure figcaption {
   position: absolute;
   visibility: hidden;
 }
 
-/* line 40, ../sass/base.scss */
+/* line 53, ../sass/base.scss */
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -132,28 +158,26 @@ header figure figcaption {
   margin: 0 auto -116px;
 }
 
-/* line 47, ../sass/base.scss */
+/* line 60, ../sass/base.scss */
 #content {
   -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
   -o-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
-  opacity: 0.95;
 }
-/* line 50, ../sass/base.scss */
+/* line 62, ../sass/base.scss */
 #content .group-content {
   min-width: 960px;
   margin: 0 auto;
 }
-/* line 52, ../sass/base.scss */
+/* line 64, ../sass/base.scss */
 #content .group-content #board {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 54, ../sass/base.scss */
+/* line 66, ../sass/base.scss */
 #content .group-content #board .frase {
   position: absolute;
   width: 99.99%;
@@ -162,38 +186,34 @@ header figure figcaption {
   padding-top: 10px;
   margin-top: -55px;
 }
-/* line 61, ../sass/base.scss */
+/* line 73, ../sass/base.scss */
 #content .group-content #board .frase h1 {
-  font-size: 350%;
-  font-family: Gochi Hand, Verdana, sans-serif;
+  font-family: Rock Salt, Verdana, sans-serif;
   text-align: center;
   display: block;
-  color: #333;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
-  text-transform: uppercase;
-  line-height: 48px;
   -moz-transform: rotate(-2deg);
   -webkit-transform: rotate(-2deg);
   -o-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
   transform: rotate(-2deg);
+  font-size: 280%;
+  line-height: 1.1em;
+  color: #222;
 }
-/* line 67, ../sass/base.scss */
+/* line 79, ../sass/base.scss */
 #content .group-content #board .frase h1:before {
   content: open-quote;
 }
-/* line 70, ../sass/base.scss */
+/* line 82, ../sass/base.scss */
 #content .group-content #board .frase h1:after {
   content: close-quote;
 }
-/* line 74, ../sass/base.scss */
+/* line 86, ../sass/base.scss */
 #content .group-content #board .frase h2 {
-  font-size: 1.8em;
-  font-family: Gochi Hand, Verdana, sans-serif;
+  font-size: 1.3em;
+  font-family: Rock Salt, Verdana, sans-serif;
   text-align: center;
   display: block;
-  color: #333;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
   margin-top: 2px;
   text-indent: 190px;
   -moz-transform: rotate(0.5deg);
@@ -201,8 +221,9 @@ header figure figcaption {
   -o-transform: rotate(0.5deg);
   -ms-transform: rotate(0.5deg);
   transform: rotate(0.5deg);
+  color: #222;
 }
-/* line 82, ../sass/base.scss */
+/* line 95, ../sass/base.scss */
 #content .group-content #board .actions {
   text-align: center;
   padding: 12px 0;
@@ -210,23 +231,23 @@ header figure figcaption {
   width: 99.99%;
   bottom: 110px;
 }
-/* line 88, ../sass/base.scss */
+/* line 101, ../sass/base.scss */
 #content .group-content #board .actions ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 92, ../sass/base.scss */
+/* line 105, ../sass/base.scss */
 #content .group-content #board .actions ul li {
   display: inline-block;
 }
-/* line 98, ../sass/base.scss */
+/* line 111, ../sass/base.scss */
 #content .group-content #hidden-sections {
   width: 960px;
   margin: 0 auto;
   padding-top: 18px;
 }
-/* line 103, ../sass/base.scss */
+/* line 116, ../sass/base.scss */
 #content .group-content #hidden-sections #search-box,
 #content .group-content #hidden-sections #comments-box,
 #content .group-content #hidden-sections #adding-box {
@@ -234,12 +255,12 @@ header figure figcaption {
   display: none;
 }
 
-/* line 112, ../sass/base.scss */
+/* line 125, ../sass/base.scss */
 footer {
   background: url(../images/BrickRound.jpg) repeat center 0;
   padding-top: 28px;
 }
-/* line 115, ../sass/base.scss */
+/* line 128, ../sass/base.scss */
 footer .logo_footer {
   display: block;
   text-indent: -100000px;
@@ -248,7 +269,7 @@ footer .logo_footer {
   height: 18px;
   margin: 0 auto;
 }
-/* line 123, ../sass/base.scss */
+/* line 136, ../sass/base.scss */
 footer p {
   font-size: 12px;
   text-shadow: 1px 1px 0 #dadada;
@@ -258,18 +279,18 @@ footer p {
   color: #333;
 }
 
-/* line 133, ../sass/base.scss */
+/* line 146, ../sass/base.scss */
 footer {
   height: 88px;
 }
 
-/* line 137, ../sass/base.scss */
+/* line 150, ../sass/base.scss */
 .push {
   height: 118px;
 }
 
 /*---------------------------------------------- Elements ------------------------------------------*/
-/* line 145, ../sass/base.scss */
+/* line 158, ../sass/base.scss */
 .actions a {
   display: block;
   text-indent: -100000px;
@@ -285,7 +306,7 @@ footer {
   -khtml-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 154, ../sass/base.scss */
+/* line 167, ../sass/base.scss */
 .actions a:hover {
   border-color: #a69f94;
   -moz-box-shadow: inset 0 1px 1px white;
@@ -293,7 +314,7 @@ footer {
   -o-box-shadow: inset 0 1px 1px white;
   box-shadow: inset 0 1px 1px white;
 }
-/* line 158, ../sass/base.scss */
+/* line 171, ../sass/base.scss */
 .actions a:active {
   border-color: #3d424a;
   -moz-box-shadow: inset 0 1px 1px white;
@@ -301,50 +322,46 @@ footer {
   -o-box-shadow: inset 0 1px 1px white;
   box-shadow: inset 0 1px 1px white;
 }
-/* line 162, ../sass/base.scss */
+/* line 175, ../sass/base.scss */
 .actions a.buscar {
   background-position: 0 0;
+  display: none;
 }
-/* line 165, ../sass/base.scss */
+/* line 179, ../sass/base.scss */
 .actions a.comentar {
   background-position: 0 -60px;
+  display: none;
 }
-/* line 168, ../sass/base.scss */
+/* line 183, ../sass/base.scss */
 .actions a.agregar {
   background-position: 0 -120px;
+  display: none;
 }
-/* line 171, ../sass/base.scss */
+/* line 187, ../sass/base.scss */
 .actions a.otrafrase {
   background-position: 0 -180px;
 }
 
-/* line 177, ../sass/base.scss */
+/* line 193, ../sass/base.scss */
 #search-box {
   position: relative;
 }
-/* line 179, ../sass/base.scss */
+/* line 195, ../sass/base.scss */
 #search-box input[placeholder], #search-box [placeholder], #search-box *[placeholder], #search-box input::-webkit-input-placeholder {
-  color: #514b43 !important;
+  color: #777 !important;
   text-shadow: none;
 }
-/* line 184, ../sass/base.scss */
+/* line 200, ../sass/base.scss */
 #search-box input[type="text"] {
   border: none;
-  font-family: Gochi Hand, Verdana, sans-serif;
+  font-family: Rock Salt, Verdana, sans-serif;
   text-align: center;
   display: block;
-  color: #333;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
-  text-shadow: 0 1px 0 #b9b2a8;
-  font-size: 24px;
-  background: #e6e6e6;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6e6e6), color-stop(100%, #d9d9d9)), repeat scroll 0 0 transparent;
-  background: -webkit-linear-gradient(center top, #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent;
-  background: -moz-linear-gradient(center top, #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent;
-  background: -o-linear-gradient(center top, #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent;
-  background: -ms-linear-gradient(center top, #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent;
-  background: linear-gradient(center top, #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent;
-  padding: 16px 0;
+  font-size: 18px;
+  /*background:#e6e6e6;*/
+  /*@include background(linear-gradient(center top , #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent);*/
+  background: url(../images/cement.png) repeat 0 #e6e6e6;
+  padding: 9px 0;
   width: 100%;
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -352,13 +369,13 @@ footer {
   -ms-border-radius: 12px;
   -khtml-border-radius: 12px;
   border-radius: 12px;
-  -moz-box-shadow: inset 0 1px 1px #89857f;
-  -webkit-box-shadow: inset 0 1px 1px #89857f;
-  -o-box-shadow: inset 0 1px 1px #89857f;
-  box-shadow: inset 0 1px 1px #89857f;
+  -moz-box-shadow: inset 0 2px 3px #555555;
+  -webkit-box-shadow: inset 0 2px 3px #555555;
+  -o-box-shadow: inset 0 2px 3px #555555;
+  box-shadow: inset 0 2px 3px #555555;
   width: 100%;
 }
-/* line 188, ../sass/base.scss */
+/* line 204, ../sass/base.scss */
 #search-box input[type="submit"] {
   font-family: Helvetica, Arial, sans-serif;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c3c3c3), color-stop(100%, #a7a7a7)), repeat scroll 0 0 transparent;
@@ -389,7 +406,7 @@ footer {
   right: 18px;
   margin-top: -53px;
 }
-/* line 80, ../sass/mixins.scss */
+/* line 87, ../sass/mixins.scss */
 #search-box input[type="submit"]:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #c3c3c3)), repeat scroll 0 0 transparent;
   background: -webkit-linear-gradient(center top, #cccccc, #c3c3c3), repeat scroll 0 0 transparent;
@@ -399,34 +416,27 @@ footer {
   background: linear-gradient(center top, #cccccc, #c3c3c3), repeat scroll 0 0 transparent;
 }
 
-/* line 196, ../sass/base.scss */
+/* line 212, ../sass/base.scss */
 #adding-box {
   position: relative;
   overflow: hidden;
 }
-/* line 199, ../sass/base.scss */
+/* line 215, ../sass/base.scss */
 #adding-box input[placeholder], #adding-box [placeholder], #adding-box *[placeholder], #adding-box input::-webkit-input-placeholder {
-  color: #514b43 !important;
+  color: #777 !important;
   text-shadow: none;
 }
-/* line 206, ../sass/base.scss */
+/* line 222, ../sass/base.scss */
 #adding-box input[type="text"] {
   border: none;
-  font-family: Gochi Hand, Verdana, sans-serif;
+  font-family: Rock Salt, Verdana, sans-serif;
   text-align: center;
   display: block;
-  color: #333;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
-  text-shadow: 0 1px 0 #b9b2a8;
-  font-size: 24px;
-  background: #e6e6e6;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e6e6e6), color-stop(100%, #d9d9d9)), repeat scroll 0 0 transparent;
-  background: -webkit-linear-gradient(center top, #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent;
-  background: -moz-linear-gradient(center top, #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent;
-  background: -o-linear-gradient(center top, #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent;
-  background: -ms-linear-gradient(center top, #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent;
-  background: linear-gradient(center top, #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent;
-  padding: 16px 0;
+  font-size: 18px;
+  /*background:#e6e6e6;*/
+  /*@include background(linear-gradient(center top , #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent);*/
+  background: url(../images/cement.png) repeat 0 #e6e6e6;
+  padding: 9px 0;
   width: 100%;
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -434,28 +444,26 @@ footer {
   -ms-border-radius: 12px;
   -khtml-border-radius: 12px;
   border-radius: 12px;
-  -moz-box-shadow: inset 0 1px 1px #89857f;
-  -webkit-box-shadow: inset 0 1px 1px #89857f;
-  -o-box-shadow: inset 0 1px 1px #89857f;
-  box-shadow: inset 0 1px 1px #89857f;
-  padding: 16px 130px 16px 16px;
+  -moz-box-shadow: inset 0 2px 3px #555555;
+  -webkit-box-shadow: inset 0 2px 3px #555555;
+  -o-box-shadow: inset 0 2px 3px #555555;
+  box-shadow: inset 0 2px 3px #555555;
+  padding: 9px 130px 9px 16px;
   width: 410px;
   float: left;
   text-align: left;
 }
-/* line 212, ../sass/base.scss */
+/* line 228, ../sass/base.scss */
 #adding-box input[type="text"].who {
   width: 230px;
   margin-right: 12px;
 }
-/* line 217, ../sass/base.scss */
+/* line 233, ../sass/base.scss */
 #adding-box select {
   border: none;
-  font-family: Gochi Hand, Verdana, sans-serif;
+  font-family: Rock Salt, Verdana, sans-serif;
   text-align: center;
   display: block;
-  color: #333;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
   font-size: 24px;
   background: none;
   color: #FFF;
@@ -477,7 +485,7 @@ footer {
   border-radius: 12px;
   height: 63px;
 }
-/* line 232, ../sass/base.scss */
+/* line 248, ../sass/base.scss */
 #adding-box select option {
   font-size: 12px;
   font-family: Arial;
@@ -485,11 +493,11 @@ footer {
   text-shadow: none;
   background: #fff;
 }
-/* line 238, ../sass/base.scss */
+/* line 254, ../sass/base.scss */
 #adding-box select option:focus {
   outline: 0px;
 }
-/* line 243, ../sass/base.scss */
+/* line 259, ../sass/base.scss */
 #adding-box input[type="submit"] {
   font-family: Helvetica, Arial, sans-serif;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c3c3c3), color-stop(100%, #a7a7a7)), repeat scroll 0 0 transparent;
@@ -520,7 +528,7 @@ footer {
   right: 18px;
   margin-top: 12px;
 }
-/* line 80, ../sass/mixins.scss */
+/* line 87, ../sass/mixins.scss */
 #adding-box input[type="submit"]:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #c3c3c3)), repeat scroll 0 0 transparent;
   background: -webkit-linear-gradient(center top, #cccccc, #c3c3c3), repeat scroll 0 0 transparent;
@@ -530,13 +538,11 @@ footer {
   background: linear-gradient(center top, #cccccc, #c3c3c3), repeat scroll 0 0 transparent;
 }
 
-/* line 252, ../sass/base.scss */
+/* line 268, ../sass/base.scss */
 #comments-box h3 {
-  font-family: Gochi Hand, Verdana, sans-serif;
+  font-family: Rock Salt, Verdana, sans-serif;
   text-align: center;
   display: block;
-  color: #333;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
   display: block;
   text-align: center;
   padding: 20px 16px;

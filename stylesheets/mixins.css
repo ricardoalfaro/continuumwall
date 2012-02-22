@@ -1,10 +1,5 @@
 /* FONTFACE --------------------------------------------------------------------------------*/
 @font-face {
-  font-family: Chalkduster;
-  src: url(../fonts/Chalkduster.ttf);
-}
-
-@font-face {
   font-family: Helvetica;
   src: url(../fonts/Helvetica.otf);
 }

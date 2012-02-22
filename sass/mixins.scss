@@ -1,9 +1,6 @@
 /* FONTFACE --------------------------------------------------------------------------------*/
 
-@font-face {
-    font-family: Chalkduster;
-    src: url(../fonts/Chalkduster.ttf);
-}
+
 @font-face {
     font-family: Helvetica;
     src: url(../fonts/Helvetica.otf);
@@ -28,11 +25,21 @@
 /* CONTENIDO -------------------------------------*/
 
 @mixin textoprincipal{
-  font-family:Gochi Hand, Verdana, sans-serif;
+  font-family:Rock Salt, Verdana, sans-serif;
   text-align:center;
   display:block;
-  color:#333;
-  @include text-shadow(0 1px 2px rgba(255,255,255,0.6));
+}
+
+@mixin pagetitle{
+  font-family:Chelsea Market, Verdana, sans-serif;
+  text-align:center;
+  display:block;
+  text-transform:uppercase;
+  color:#888;
+  @include text-shadow(0 -2px 0px rgba(0, 0, 0, 0.5));
+  letter-spacing:-0.07em;
+  position:absolute;
+  width:99.99%;
 }
 
 
@@ -54,14 +61,14 @@
 @mixin input-controls{
   border:none;
   @include textoprincipal;
-  @include text-shadow(0 1px 0 #b9b2a8);
-  font-size:24px;
-  background:#e6e6e6;
-  @include background(linear-gradient(center top , #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent);
-  padding:16px 0;
+  font-size:18px;
+  /*background:#e6e6e6;*/
+  /*@include background(linear-gradient(center top , #e6e6e6, #d9d9d9), repeat scroll 0 0 transparent);*/
+  background: url(../images/cement.png) repeat 0 #e6e6e6;
+  padding:9px 0;
   width:100%;
   @include border-radius(12px);
-  @include box-shadow(inset 0 1px 1px #89857f);
+  @include box-shadow(inset 0 2px 3px #555);
 }
 
 @mixin buttons{
