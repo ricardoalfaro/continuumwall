@@ -25,13 +25,13 @@
 /* CONTENIDO -------------------------------------*/
 
 @mixin textoprincipal{
-  font-family:Rock Salt, Verdana, sans-serif;
+  font-family:"Rock Salt", Verdana, sans-serif;
   text-align:center;
   display:block;
 }
 
 @mixin pagetitle{
-  font-family:Chelsea Market, Verdana, sans-serif;
+  font-family:"Chelsea Market", Verdana, sans-serif;
   text-align:center;
   display:block;
   text-transform:uppercase;
@@ -40,6 +40,7 @@
   letter-spacing:-0.07em;
   position:absolute;
   width:99.99%;
+  @include opacity(0.75);
 }
 
 

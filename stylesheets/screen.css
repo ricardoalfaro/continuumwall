@@ -95,14 +95,14 @@ body.ceramica {
 }
 
 /*---------------------------------------------- General Layout ------------------------------------------*/
-/* line 20, ../sass/base.scss */
+/* line 19, ../sass/base.scss */
 header {
   background: url(../images/cement.png) repeat center bottom;
   height: 155px;
 }
-/* line 23, ../sass/base.scss */
+/* line 22, ../sass/base.scss */
 header h1 {
-  font-family: Chelsea Market, Verdana, sans-serif;
+  font-family: "Chelsea Market", Verdana, sans-serif;
   text-align: center;
   display: block;
   text-transform: uppercase;
@@ -111,12 +111,14 @@ header h1 {
   letter-spacing: -0.07em;
   position: absolute;
   width: 99.99%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
   top: 40px;
   font-size: 190%;
 }
-/* line 28, ../sass/base.scss */
+/* line 27, ../sass/base.scss */
 header h2 {
-  font-family: Chelsea Market, Verdana, sans-serif;
+  font-family: "Chelsea Market", Verdana, sans-serif;
   text-align: center;
   display: block;
   text-transform: uppercase;
@@ -125,17 +127,19 @@ header h2 {
   letter-spacing: -0.07em;
   position: absolute;
   width: 99.99%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
   position: absolute;
   top: 70px;
   font-size: 290%;
 }
 
-/* line 36, ../sass/base.scss */
+/* line 35, ../sass/base.scss */
 figure {
   position: relative;
   height: 150px;
 }
-/* line 39, ../sass/base.scss */
+/* line 38, ../sass/base.scss */
 figure a {
   left: 50%;
   display: block;
@@ -144,13 +148,13 @@ figure a {
   margin-left: -50px;
   z-index: 10;
 }
-/* line 47, ../sass/base.scss */
+/* line 46, ../sass/base.scss */
 figure figcaption {
   position: absolute;
   visibility: hidden;
 }
 
-/* line 53, ../sass/base.scss */
+/* line 52, ../sass/base.scss */
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -158,37 +162,37 @@ figure figcaption {
   margin: 0 auto -116px;
 }
 
-/* line 60, ../sass/base.scss */
+/* line 59, ../sass/base.scss */
 #content {
   -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
   -o-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
 }
-/* line 62, ../sass/base.scss */
+/* line 61, ../sass/base.scss */
 #content .group-content {
   min-width: 960px;
   margin: 0 auto;
 }
-/* line 64, ../sass/base.scss */
+/* line 63, ../sass/base.scss */
 #content .group-content #board {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 66, ../sass/base.scss */
+/* line 65, ../sass/base.scss */
 #content .group-content #board .frase {
   position: absolute;
-  width: 99.99%;
+  width: 99%;
   top: 50%;
   height: 100px;
   padding-top: 10px;
   margin-top: -55px;
 }
-/* line 73, ../sass/base.scss */
+/* line 72, ../sass/base.scss */
 #content .group-content #board .frase h1 {
-  font-family: Rock Salt, Verdana, sans-serif;
+  font-family: "Rock Salt", Verdana, sans-serif;
   text-align: center;
   display: block;
   -moz-transform: rotate(-2deg);
@@ -200,18 +204,18 @@ figure figcaption {
   line-height: 1.1em;
   color: #222;
 }
-/* line 79, ../sass/base.scss */
+/* line 78, ../sass/base.scss */
 #content .group-content #board .frase h1:before {
   content: open-quote;
 }
-/* line 82, ../sass/base.scss */
+/* line 81, ../sass/base.scss */
 #content .group-content #board .frase h1:after {
   content: close-quote;
 }
-/* line 86, ../sass/base.scss */
+/* line 85, ../sass/base.scss */
 #content .group-content #board .frase h2 {
   font-size: 1.3em;
-  font-family: Rock Salt, Verdana, sans-serif;
+  font-family: "Rock Salt", Verdana, sans-serif;
   text-align: center;
   display: block;
   margin-top: 2px;
@@ -223,7 +227,7 @@ figure figcaption {
   transform: rotate(0.5deg);
   color: #222;
 }
-/* line 95, ../sass/base.scss */
+/* line 94, ../sass/base.scss */
 #content .group-content #board .actions {
   text-align: center;
   padding: 12px 0;
@@ -231,23 +235,23 @@ figure figcaption {
   width: 99.99%;
   bottom: 110px;
 }
-/* line 101, ../sass/base.scss */
+/* line 100, ../sass/base.scss */
 #content .group-content #board .actions ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 105, ../sass/base.scss */
+/* line 104, ../sass/base.scss */
 #content .group-content #board .actions ul li {
   display: inline-block;
 }
-/* line 111, ../sass/base.scss */
+/* line 110, ../sass/base.scss */
 #content .group-content #hidden-sections {
   width: 960px;
   margin: 0 auto;
   padding-top: 18px;
 }
-/* line 116, ../sass/base.scss */
+/* line 115, ../sass/base.scss */
 #content .group-content #hidden-sections #search-box,
 #content .group-content #hidden-sections #comments-box,
 #content .group-content #hidden-sections #adding-box {
@@ -255,12 +259,12 @@ figure figcaption {
   display: none;
 }
 
-/* line 125, ../sass/base.scss */
+/* line 124, ../sass/base.scss */
 footer {
   background: url(../images/BrickRound.jpg) repeat center 0;
   padding-top: 28px;
 }
-/* line 128, ../sass/base.scss */
+/* line 127, ../sass/base.scss */
 footer .logo_footer {
   display: block;
   text-indent: -100000px;
@@ -268,6 +272,8 @@ footer .logo_footer {
   width: 122px;
   height: 18px;
   margin: 0 auto;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
 }
 /* line 136, ../sass/base.scss */
 footer p {
@@ -276,7 +282,7 @@ footer p {
   display: block;
   text-align: center;
   padding-top: 10px;
-  color: #333;
+  color: #666;
 }
 
 /* line 146, ../sass/base.scss */
@@ -354,7 +360,7 @@ footer {
 /* line 200, ../sass/base.scss */
 #search-box input[type="text"] {
   border: none;
-  font-family: Rock Salt, Verdana, sans-serif;
+  font-family: "Rock Salt", Verdana, sans-serif;
   text-align: center;
   display: block;
   font-size: 18px;
@@ -406,7 +412,7 @@ footer {
   right: 18px;
   margin-top: -53px;
 }
-/* line 87, ../sass/mixins.scss */
+/* line 88, ../sass/mixins.scss */
 #search-box input[type="submit"]:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #c3c3c3)), repeat scroll 0 0 transparent;
   background: -webkit-linear-gradient(center top, #cccccc, #c3c3c3), repeat scroll 0 0 transparent;
@@ -429,7 +435,7 @@ footer {
 /* line 222, ../sass/base.scss */
 #adding-box input[type="text"] {
   border: none;
-  font-family: Rock Salt, Verdana, sans-serif;
+  font-family: "Rock Salt", Verdana, sans-serif;
   text-align: center;
   display: block;
   font-size: 18px;
@@ -461,7 +467,7 @@ footer {
 /* line 233, ../sass/base.scss */
 #adding-box select {
   border: none;
-  font-family: Rock Salt, Verdana, sans-serif;
+  font-family: "Rock Salt", Verdana, sans-serif;
   text-align: center;
   display: block;
   font-size: 24px;
@@ -528,7 +534,7 @@ footer {
   right: 18px;
   margin-top: 12px;
 }
-/* line 87, ../sass/mixins.scss */
+/* line 88, ../sass/mixins.scss */
 #adding-box input[type="submit"]:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #c3c3c3)), repeat scroll 0 0 transparent;
   background: -webkit-linear-gradient(center top, #cccccc, #c3c3c3), repeat scroll 0 0 transparent;
@@ -540,7 +546,7 @@ footer {
 
 /* line 268, ../sass/base.scss */
 #comments-box h3 {
-  font-family: Rock Salt, Verdana, sans-serif;
+  font-family: "Rock Salt", Verdana, sans-serif;
   text-align: center;
   display: block;
   display: block;

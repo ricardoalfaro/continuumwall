@@ -14,7 +14,6 @@ body{
 }
 
 
-
 /*---------------------------------------------- General Layout ------------------------------------------*/
 
 header{
@@ -65,7 +64,7 @@ figure{
 			@include box-sizing(border-box);
 			.frase{
 				position: absolute;
-				width: 99.99%;
+				width: 99%;
 				top: 50%;
 				height: 100px;
 				padding-top: 10px;
@@ -132,6 +131,7 @@ footer{
 		width:122px;
 		height:18px;
 		margin:0 auto;
+		@include opacity(0.5);
 	}
 	p{
 		font-size:12px;
@@ -139,7 +139,7 @@ footer{
 		display:block;
 		text-align:center;
 		padding-top:10px;
-		color:#333;
+		color:#666;
 	}
 }
 
