@@ -59,7 +59,13 @@ cl.continuum.wall = {
         {texto:"Yo soy el que hace que tu we&aacute; se mueva", autor:"Jorge a Cristian"},
         {texto:"Tu cachai que el Leo nos paga por su pedazo", autor:"Ricardo"},
         {texto:"Ya, ch&aacute;ntamelo como un chore", autor:"Rodrigo"},
-        {texto:"A ti no te daban cuando chico?... No!", autor:"Rodrigo a Edu"}
+        {texto:"A ti no te daban cuando chico?... No!", autor:"Rodrigo a Edu"},
+        {texto:"Te la puse justo entremedio de la manga", autor:"Abraham a Mauro"},
+        {texto:"Verdad, yo se las vi al Alter", autor:"Rodrigo"},
+        {texto:"Lo tengo insertado...", autor:"Rodrigo"},
+        {texto:"El mio quedó chico al lado del tuyo", autor:"Rodrigo"},
+        {texto:"Igual se pega sus pajeos", autor:"Abraham"},
+        {texto:"Me daba la paja a cada rato", autor:"Victor (el dostor)"}
     ]
 
 }
