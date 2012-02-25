@@ -37,6 +37,7 @@ cl.continuum.wall = {
         {texto:"Yo la puse ayer", autor:"Ricardo"},
         {texto:"Yo la tengo en el piso",autor:"Victor"},
         {texto:"Filho da puta", autor:"Thais"},
+				{texto:"Ferrari, tienes minas? -Si- ¿Pestame una?", autor:"Ricardos a Cristian"},
         {texto:"Yo lo quiero completo",autor:"Edu"},
         {texto:"Te dej&oacute; paradito la pastilla ah?", autor:"Rodrigo a Abraham"},
         {texto:"Quiero probarlo", autor:"Edu"},
