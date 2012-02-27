@@ -69,12 +69,13 @@ figure{
 				height: 100px;
 				padding-top: 10px;
 				margin-top: -55px;
+				@include opacity(0.62);
 				h1{
 					@include textoprincipal;
 					@include rotate(-2deg);
 					font-size:280%;
 					line-height:1.1em;
-					color:#222;
+					color:#000;
 					&:before{
 						content:open-quote;
 					}
@@ -88,7 +89,7 @@ figure{
 					margin-top:2px;
 					text-indent:190px;
 					@include rotate(0.5deg);
-					color:#222;
+					color:#000;
 				}
 			}
 			.actions{

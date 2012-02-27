@@ -1,5 +1,5 @@
 /* Welcome to Compass.*/
-/* line 17, ../../../../.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /Users/dev/.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, /Users/dev/.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /Users/dev/.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /Users/dev/.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /Users/dev/.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /Users/dev/.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, /Users/dev/.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /Users/dev/.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, /Users/dev/.rvm/gems/ruby-1.8.7-p334@design/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -76,31 +76,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* CONTENIDO -------------------------------------*/
 /* DECORACION -------------------------------------*/
 /* FORMS -------------------------------------*/
-/* line 1, ../sass/base.scss */
+/* line 1, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 html, body {
   height: 100%;
 }
 
-/* line 6, ../sass/base.scss */
+/* line 6, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
-/* line 8, ../sass/base.scss */
+/* line 8, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 body.ladrillo {
   background: url(../images/BrickLargeBrown0019.jpg) repeat center 0 transparent;
 }
-/* line 11, ../sass/base.scss */
+/* line 11, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 body.ceramica {
   background: url(../images/BrickLargeBrown0019.jpg) repeat center 0 transparent;
 }
 
 /*---------------------------------------------- General Layout ------------------------------------------*/
-/* line 19, ../sass/base.scss */
+/* line 19, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 header {
   background: url(../images/cement.png) repeat center bottom;
   height: 155px;
 }
-/* line 22, ../sass/base.scss */
+/* line 22, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 header h1 {
   font-family: "Chelsea Market", Verdana, sans-serif;
   text-align: center;
@@ -116,7 +116,7 @@ header h1 {
   top: 40px;
   font-size: 190%;
 }
-/* line 27, ../sass/base.scss */
+/* line 27, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 header h2 {
   font-family: "Chelsea Market", Verdana, sans-serif;
   text-align: center;
@@ -134,12 +134,12 @@ header h2 {
   font-size: 290%;
 }
 
-/* line 35, ../sass/base.scss */
+/* line 35, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 figure {
   position: relative;
   height: 150px;
 }
-/* line 38, ../sass/base.scss */
+/* line 38, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 figure a {
   left: 50%;
   display: block;
@@ -148,13 +148,13 @@ figure a {
   margin-left: -50px;
   z-index: 10;
 }
-/* line 46, ../sass/base.scss */
+/* line 46, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 figure figcaption {
   position: absolute;
   visibility: hidden;
 }
 
-/* line 52, ../sass/base.scss */
+/* line 52, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -162,26 +162,26 @@ figure figcaption {
   margin: 0 auto -116px;
 }
 
-/* line 59, ../sass/base.scss */
+/* line 59, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #content {
   -moz-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
   -o-box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 3px 4px rgba(0, 0, 0, 0.2);
 }
-/* line 61, ../sass/base.scss */
+/* line 61, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #content .group-content {
   min-width: 960px;
   margin: 0 auto;
 }
-/* line 63, ../sass/base.scss */
+/* line 63, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #content .group-content #board {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 65, ../sass/base.scss */
+/* line 65, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #content .group-content #board .frase {
   position: absolute;
   width: 99%;
@@ -189,8 +189,10 @@ figure figcaption {
   height: 100px;
   padding-top: 10px;
   margin-top: -55px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=62);
+  opacity: 0.62;
 }
-/* line 72, ../sass/base.scss */
+/* line 73, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #content .group-content #board .frase h1 {
   font-family: "Rock Salt", Verdana, sans-serif;
   text-align: center;
@@ -202,17 +204,17 @@ figure figcaption {
   transform: rotate(-2deg);
   font-size: 280%;
   line-height: 1.1em;
-  color: #222;
+  color: #000;
 }
-/* line 78, ../sass/base.scss */
+/* line 79, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #content .group-content #board .frase h1:before {
   content: open-quote;
 }
-/* line 81, ../sass/base.scss */
+/* line 82, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #content .group-content #board .frase h1:after {
   content: close-quote;
 }
-/* line 85, ../sass/base.scss */
+/* line 86, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #content .group-content #board .frase h2 {
   font-size: 1.3em;
   font-family: "Rock Salt", Verdana, sans-serif;
@@ -225,9 +227,9 @@ figure figcaption {
   -o-transform: rotate(0.5deg);
   -ms-transform: rotate(0.5deg);
   transform: rotate(0.5deg);
-  color: #222;
+  color: #000;
 }
-/* line 94, ../sass/base.scss */
+/* line 95, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #content .group-content #board .actions {
   text-align: center;
   padding: 12px 0;
@@ -235,23 +237,23 @@ figure figcaption {
   width: 99.99%;
   bottom: 110px;
 }
-/* line 100, ../sass/base.scss */
+/* line 101, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #content .group-content #board .actions ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 104, ../sass/base.scss */
+/* line 105, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #content .group-content #board .actions ul li {
   display: inline-block;
 }
-/* line 110, ../sass/base.scss */
+/* line 111, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #content .group-content #hidden-sections {
   width: 960px;
   margin: 0 auto;
   padding-top: 18px;
 }
-/* line 115, ../sass/base.scss */
+/* line 116, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #content .group-content #hidden-sections #search-box,
 #content .group-content #hidden-sections #comments-box,
 #content .group-content #hidden-sections #adding-box {
@@ -259,12 +261,12 @@ figure figcaption {
   display: none;
 }
 
-/* line 124, ../sass/base.scss */
+/* line 125, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 footer {
   background: url(../images/BrickRound.jpg) repeat center 0;
   padding-top: 28px;
 }
-/* line 127, ../sass/base.scss */
+/* line 128, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 footer .logo_footer {
   display: block;
   text-indent: -100000px;
@@ -275,7 +277,7 @@ footer .logo_footer {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 136, ../sass/base.scss */
+/* line 137, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 footer p {
   font-size: 12px;
   text-shadow: 1px 1px 0 #dadada;
@@ -285,18 +287,18 @@ footer p {
   color: #666;
 }
 
-/* line 146, ../sass/base.scss */
+/* line 147, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 footer {
   height: 88px;
 }
 
-/* line 150, ../sass/base.scss */
+/* line 151, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 .push {
   height: 118px;
 }
 
 /*---------------------------------------------- Elements ------------------------------------------*/
-/* line 158, ../sass/base.scss */
+/* line 159, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 .actions a {
   display: block;
   text-indent: -100000px;
@@ -312,7 +314,7 @@ footer {
   -khtml-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 167, ../sass/base.scss */
+/* line 168, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 .actions a:hover {
   border-color: #a69f94;
   -moz-box-shadow: inset 0 1px 1px white;
@@ -320,7 +322,7 @@ footer {
   -o-box-shadow: inset 0 1px 1px white;
   box-shadow: inset 0 1px 1px white;
 }
-/* line 171, ../sass/base.scss */
+/* line 172, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 .actions a:active {
   border-color: #3d424a;
   -moz-box-shadow: inset 0 1px 1px white;
@@ -328,36 +330,36 @@ footer {
   -o-box-shadow: inset 0 1px 1px white;
   box-shadow: inset 0 1px 1px white;
 }
-/* line 175, ../sass/base.scss */
+/* line 176, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 .actions a.buscar {
   background-position: 0 0;
   display: none;
 }
-/* line 179, ../sass/base.scss */
+/* line 180, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 .actions a.comentar {
   background-position: 0 -60px;
   display: none;
 }
-/* line 183, ../sass/base.scss */
+/* line 184, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 .actions a.agregar {
   background-position: 0 -120px;
   display: none;
 }
-/* line 187, ../sass/base.scss */
+/* line 188, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 .actions a.otrafrase {
   background-position: 0 -180px;
 }
 
-/* line 193, ../sass/base.scss */
+/* line 194, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #search-box {
   position: relative;
 }
-/* line 195, ../sass/base.scss */
+/* line 196, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #search-box input[placeholder], #search-box [placeholder], #search-box *[placeholder], #search-box input::-webkit-input-placeholder {
   color: #777 !important;
   text-shadow: none;
 }
-/* line 200, ../sass/base.scss */
+/* line 201, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #search-box input[type="text"] {
   border: none;
   font-family: "Rock Salt", Verdana, sans-serif;
@@ -381,7 +383,7 @@ footer {
   box-shadow: inset 0 2px 3px #555555;
   width: 100%;
 }
-/* line 204, ../sass/base.scss */
+/* line 205, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #search-box input[type="submit"] {
   font-family: Helvetica, Arial, sans-serif;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c3c3c3), color-stop(100%, #a7a7a7)), repeat scroll 0 0 transparent;
@@ -412,7 +414,7 @@ footer {
   right: 18px;
   margin-top: -53px;
 }
-/* line 88, ../sass/mixins.scss */
+/* line 88, /Users/dev/Proyectos/Diseño/WallContinuum/sass/mixins.scss */
 #search-box input[type="submit"]:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #c3c3c3)), repeat scroll 0 0 transparent;
   background: -webkit-linear-gradient(center top, #cccccc, #c3c3c3), repeat scroll 0 0 transparent;
@@ -422,17 +424,17 @@ footer {
   background: linear-gradient(center top, #cccccc, #c3c3c3), repeat scroll 0 0 transparent;
 }
 
-/* line 212, ../sass/base.scss */
+/* line 213, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #adding-box {
   position: relative;
   overflow: hidden;
 }
-/* line 215, ../sass/base.scss */
+/* line 216, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #adding-box input[placeholder], #adding-box [placeholder], #adding-box *[placeholder], #adding-box input::-webkit-input-placeholder {
   color: #777 !important;
   text-shadow: none;
 }
-/* line 222, ../sass/base.scss */
+/* line 223, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #adding-box input[type="text"] {
   border: none;
   font-family: "Rock Salt", Verdana, sans-serif;
@@ -459,12 +461,12 @@ footer {
   float: left;
   text-align: left;
 }
-/* line 228, ../sass/base.scss */
+/* line 229, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #adding-box input[type="text"].who {
   width: 230px;
   margin-right: 12px;
 }
-/* line 233, ../sass/base.scss */
+/* line 234, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #adding-box select {
   border: none;
   font-family: "Rock Salt", Verdana, sans-serif;
@@ -491,7 +493,7 @@ footer {
   border-radius: 12px;
   height: 63px;
 }
-/* line 248, ../sass/base.scss */
+/* line 249, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #adding-box select option {
   font-size: 12px;
   font-family: Arial;
@@ -499,11 +501,11 @@ footer {
   text-shadow: none;
   background: #fff;
 }
-/* line 254, ../sass/base.scss */
+/* line 255, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #adding-box select option:focus {
   outline: 0px;
 }
-/* line 259, ../sass/base.scss */
+/* line 260, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #adding-box input[type="submit"] {
   font-family: Helvetica, Arial, sans-serif;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c3c3c3), color-stop(100%, #a7a7a7)), repeat scroll 0 0 transparent;
@@ -534,7 +536,7 @@ footer {
   right: 18px;
   margin-top: 12px;
 }
-/* line 88, ../sass/mixins.scss */
+/* line 88, /Users/dev/Proyectos/Diseño/WallContinuum/sass/mixins.scss */
 #adding-box input[type="submit"]:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cccccc), color-stop(100%, #c3c3c3)), repeat scroll 0 0 transparent;
   background: -webkit-linear-gradient(center top, #cccccc, #c3c3c3), repeat scroll 0 0 transparent;
@@ -544,7 +546,7 @@ footer {
   background: linear-gradient(center top, #cccccc, #c3c3c3), repeat scroll 0 0 transparent;
 }
 
-/* line 268, ../sass/base.scss */
+/* line 269, /Users/dev/Proyectos/Diseño/WallContinuum/sass/base.scss */
 #comments-box h3 {
   font-family: "Rock Salt", Verdana, sans-serif;
   text-align: center;
